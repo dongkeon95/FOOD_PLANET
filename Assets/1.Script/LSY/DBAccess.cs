@@ -45,11 +45,12 @@ public class DBAccess : MonoBehaviour
         else
         {
             filepath = Application.dataPath + "/StreamingAssets/DB.db";
+            text0.text = "윈도우 환경 DB.db 실행1";
             if (!File.Exists(filepath))
             {
                 File.Copy(Application.streamingAssetsPath + "/DB.db", filepath);
                 print(filepath);
-                text0.text = "윈도우 환경 DB.db 실행";
+                text0.text = "윈도우 환경 DB.db 실행2";
             }
         }
         //print("CopyDB()작동");
